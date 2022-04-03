@@ -4,7 +4,7 @@ import {videos} from "./something";
 
 const app = express()
 const bodyParser = require('body-parser')
-const port = 3002
+const port = process.env.PORT || 3002
 //sudo killall -9 node
 app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
