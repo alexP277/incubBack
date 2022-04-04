@@ -1,12 +1,12 @@
 import express, {Request, Response} from 'express'
-import cors from 'cors'
+//import cors from 'cors'
 import {videos} from "./something";
 
 const app = express()
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3002
 //sudo killall -9 node
-app.use(cors())
+//app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
